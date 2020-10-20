@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Models\Traits\BaseLogsActivity;
 use Illuminate\Database\Eloquent\Model;
 
 class BaseModel extends Model
 {
+    use BaseLogsActivity;
+
     /**
      * Generate drop-down select data with basic IDs.
      *
